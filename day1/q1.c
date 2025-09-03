@@ -23,6 +23,6 @@ int main ()
     printf("Enter number b");
     scanf("%d", &b);
 
-    printf("The sum of the number is : %d", a + b);
+    printf("The sum of the number is %d", a + b);
     return 0;
 }
