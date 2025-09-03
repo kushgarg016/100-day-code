@@ -23,13 +23,13 @@ int main ()
     printf("Enter number b");
     scanf("%d", &b);
 
-    printf("The sum of the number is : %d\n", a + b);
+    printf("The sum of the number is %d\n", a + b);
 
-    printf("The difference of the number is : %d\n", a - b);
+    printf("The difference of the number is %d\n", a - b);
 
-    printf("The product of the number is : %d\n", a * b);
+    printf("The product of the number is %d\n", a * b);
     if(b!=0)
-    printf("The quotient of the number is : %d\n",a / b);
+    printf("The quotient of the number is %d\n",a / b);
     else
     printf("Division by zero is not possible");
     return 0;
