@@ -17,9 +17,9 @@ Area=28.27, Circumference=18.85
 int main ()
 {
     int r;
-    printf("Enter radius of the circle : ");
+    printf("Enter radius of the circle");
     scanf("%d",&r);
 
-    printf("Area of circle : %.0f \nperimeter of circle : %.0f", (3.14*(r*r)), (2*3.14*r));
+    printf("Area of circle : %.0f \n perimeter of circle : %.0f", (3.14*(r*r)), (2*3.14*r));
     return 0;
 }
