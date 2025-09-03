@@ -18,7 +18,7 @@ Area=21, Perimeter=20
 int main ()
 {
     int a,b;
-    printf("Enter length and breadth : ");
+    printf("Enter length and breadth");
     scanf("%d %d", &a, &b);
     
     printf("Area : %d\tPerimeter : %d ", a*b, 2*(a + b));
