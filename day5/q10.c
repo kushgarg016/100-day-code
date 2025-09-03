@@ -1,31 +1,32 @@
-// Q10 : Write a program to input time in seconds and convert it to hours : minutes : seconds format.
+// Q9: Write a program to calculate simple and compound interest for given principal, rate, and time.
+
 /*
 Sample Test Cases:
 Input 1:
-3661
+1000 5 2
 Output 1:
-1:1:1
+Simple Interest=100, Compound Interest=102.5
+
 Input 2:
-7322
+5000 7 3
 Output 2:
-2:2:2
+Simple Interest=1050, Compound Interest=1125.76
+
 */
 #include <stdio.h>
+#include <math.h>
 int main()
 {
-    printf("Enter time in seconds: ");
-    int seconds;
-
-    scanf("%d", &seconds); // Taking input from user
-
-    int min = seconds / 60; // Diving sec by min to get the conversion
-
-    int hours = min / 60; // conversion of mintues into hours.
-
-    min = min % 60;
-
-    seconds = seconds % 60; // storing the remainder seconds and getting new value of seconds
-
-    printf("Time in hours : %d Min : %d Seconds : %d ", hours, min, seconds);
+    float r, p;
+    int t;
+    printf("Enter principal :");
+    scanf("%f", &p);
+    printf("Enter Interest :");
+    scanf("%f", &r);
+    printf("Enter time :");
+    scanf("%d", &t);
+    float si = (p * t * r) / 100.0;
+    float ci = p * pow((1 + r / 100.0), t) - p;
+    printf("S.I = %f\tC.I=%f", si, ci);
     return 0;
 }
