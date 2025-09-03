@@ -17,10 +17,10 @@ Sum=10, Diff=4, Product=21, Quotient=2
 int main ()
 {
     int a,b;
-    printf("Enter number a : ");
+    printf("Enter number a");
     scanf("%d",&a);
 
-    printf("Enter number b : ");
+    printf("Enter number b");
     scanf("%d", &b);
 
     printf("The sum of the number is : %d\n", a + b);
