@@ -22,3 +22,20 @@
 // -1
 
 // */
+#include <stdio.h>
+
+int main() {
+    int n, x, pivot = -1;
+    scanf("%d", &n);
+    for (x = 1; x <= n; x++) {
+        int left_sum = x * (x + 1) / 2;
+        int right_sum = (n * (n + 1) / 2) - ((x - 1) * x / 2);
+        if (left_sum == right_sum) {
+            pivot = x;
+            break;
+        }
+    }
+    printf("%d", pivot);
+    return 0;
+}
+
